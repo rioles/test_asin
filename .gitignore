@@ -1,0 +1,14 @@
+# Environnements virtuels Python (le dossier du projet s'appelle « venv »)
+test_asin/.venv/
+test_asin/venv/
+.venv/
+venv/
+
+# Réglages de l'éditeur
+.vscode/
+
+# Secrets : le .env contient le mot de passe de la base (garder .env.example)
+
+# Fichiers générés par Python
+__pycache__/
+*.py[cod]

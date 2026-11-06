@@ -1,0 +1,8 @@
+-- 1. Créer l'utilisateur (rôle) avec un mot de passe sécurisé
+CREATE USER test_asin WITH PASSWORD 'root';
+
+-- 2. Créer la base de données en définissant 'test_asin' comme propriétaire (owner)
+CREATE DATABASE inscription_tma_db OWNER test_asin;
+
+-- 3. (Optionnel mais recommandé) Assurer tous les privilèges à cet utilisateur sur sa base
+GRANT ALL PRIVILEGES ON DATABASE test TO test_asin;
